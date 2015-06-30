@@ -8,8 +8,14 @@ $base-color:             #222 !default;
 $base-background-color:  #fff !default;
 
 $breakpoints: (
-  "baby-bear"    "only screen and (min-width: 400px)",
-  "mama-bear"    "only screen and (min-width: 600px)",
-  "papa-bear"    "only screen and (min-width: 900px)",
-  "granny-bear"  "only screen and (min-width: 1200px)"
+  "baby-bear":              "(min-width: " + em(400, 16) + ")",
+  "baby-bear-mama-bear":    "(min-width: " + em(400, 16) + ") and (max-width: " + em(599, 16) + ")",
+  "to-mama-bear":           "(max-width: " + em(599, 16) + ")",
+  "mama-bear":              "(min-width: " + em(600, 16) + ")",
+  "mama-bear-papa-bear":    "(min-width: " + em(600, 16) + ") and (max-width: " + em(899, 16) + ")",
+  "to-papa-bear":           "(max-width: " + em(899, 16) + ")",
+  "papa-bear":              "(min-width: " + em(900, 16) + ")",
+  "papa-bear-granny-bear":  "(min-width: " + em(900, 16) + ") and (max-width: " + em(1199, 16) + ")",
+  "to-granny-bear":         "(max-width: " + em(1199, 16) + ")",
+  "granny-bear":            "(min-width: " + em(1200, 16) + ")"
 ) !default;
